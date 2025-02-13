@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App(){
+    return(
+        <article className=''>  
+            <header className=''>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+                <nav className='m-nav-info'></nav>
+                <h1 className='m-h1-style'>¿Quienes Somos?</h1>
+                <p className='m-p1-style'>Somos una empresa dedicada a la comercializacion de calzados laborales. La imagen de su empresa se refleja en la presencia de su personal. El punto de encuentro entre su necesidad y nuestro servicio.</p>
+                <div className='m-dv-syle'>
+                    <strong>Testeo 1</strong>
+                    <span>informacion complementaria</span>
+                </div>
+            
+            </header>
+
+            <aside>
+                <button className='m-buttons-syle'>
+                    Solicitar
+                </button>
+            </aside>
+        </article>
+    )
+
 }
-
-export default App
